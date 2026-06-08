@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vet Clinics For Sale — Canada</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 2rem; max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .subtitle { color: #888; font-size: 0.85rem; margin-bottom: 0.5rem; }
+  .updated { color: #555; font-size: 0.75rem; margin-bottom: 2rem; }
+  
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
+  
+  .card {
+    background: #111; border: 1px solid #222; border-radius: 8px;
+    padding: 1.25rem; transition: border-color 0.2s;
+  }
+  .card:hover { border-color: #D4AF37; }
+  
+  .card h3 { font-size: 1rem; color: #fff; margin-bottom: 0.5rem; line-height: 1.4; }
+  .card .broker { font-size: 0.75rem; color: #D4AF37; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+  
+  .card .meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem; }
+  .card .meta-item { }
+  .card .meta-label { font-size: 0.65rem; color: #555; text-transform: uppercase; letter-spacing: 0.05em; }
+  .card .meta-value { font-size: 0.85rem; color: #ccc; font-weight: 600; }
+  .card .meta-value.revenue { color: #34d399; }
+  
+  .card .status-tag {
+    display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px;
+    font-size: 0.7rem; font-weight: 600;
+  }
+  .tag-new { background: #064e3b; color: #34d399; }
+  .tag-available { background: #1e3a5f; color: #60a5fa; }
+  .tag-reduced { background: #713f12; color: #fbbf24; }
+  .tag-updated { background: #3b0764; color: #c084fc; }
+  .tag-default { background: #222; color: #888; }
+  
+  .card a { color: #60a5fa; text-decoration: none; font-size: 0.8rem; }
+  .card a:hover { color: #D4AF37; }
+  
+  .footer { text-align: center; margin-top: 3rem; color: #555; font-size: 0.8rem; }
+  
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<h1>Vet Clinics For Sale — Canada</h1>
+<div class="subtitle">Aggregated from MBC Brokerage, Simmons, and Canada Veterinary Brokerage</div>
+<div class="updated" id="updated"></div>
+
+<div class="grid" id="listings"></div>
+
+<div class="footer">
+  Data sourced from public broker listings. Updated weekly.<br>
+  <a href="https://vetinc.ca" style="color: #D4AF37;">vetinc.ca</a>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/jack108510/vetinc-status/main/sale-listings.json';
+
+async function load() {
+  try {
+    const resp = await fetch(DATA_URL);
+    const data = await resp.json();
+    render(data);
+  } catch (e) {
+    document.getElementById('listings').innerHTML = '<p style="color:#888">Loading...</p>';
+  }
+}
+
+function render(data) {
+  const listings = data.listings || [];
+  const lastScrape = data.last_scrape || 'Unknown';
+  
+  document.getElementById('updated').textContent = `Last updated: ${lastScrape.substring(0, 10)} — ${Object.keys(listings).length} clinics tracked`;
+  
+  const sorted = Object.values(listings).sort((a, b) => (b.revenue || 0) - (a.revenue || 0));
+  
+  const html = sorted.map(l => {
+    const status = (l.status || '').replace(/&nbsp;/g, '').trim().toLowerCase();
+    let tagClass = 'tag-default';
+    let tagText = 'Available';
+    if (status.includes('new')) { tagClass = 'tag-new'; tagText = 'NEW'; }
+    else if (status.includes('reduc') || status.includes('price')) { tagClass = 'tag-reduced'; tagText = 'REDUCED'; }
+    else if (status.includes('update')) { tagClass = 'tag-updated'; tagText = 'UPDATED'; }
+    
+    const rev = l.revenue ? `$${l.revenue.toLocaleString()}` : 'N/A';
+    const ebitda = l.ebitda ? `$${l.ebitda.toLocaleString()}` : 'N/A';
+    
+    return `
+      <div class="card">
+        <div class="broker">${l.broker}</div>
+        <h3>${l.name}</h3>
+        <div class="meta">
+          ${l.province ? `<div class="meta-item"><div class="meta-label">Province</div><div class="meta-value">${l.province}</div></div>` : ''}
+          <div class="meta-item"><div class="meta-label">Revenue</div><div class="meta-value revenue">${rev}</div></div>
+          ${l.ebitda ? `<div class="meta-item"><div class="meta-label">EBITDA</div><div class="meta-value">${ebitda}</div></div>` : ''}
+          ${l.available ? `<div class="meta-item"><div class="meta-label">Available</div><div class="meta-value">${l.available}</div></div>` : ''}
+        </div>
+        <span class="status-tag ${tagClass}">${tagText}</span>
+        <br><br>
+        <a href="${l.url}" target="_blank">View Listing →</a>
+      </div>
+    `;
+  }).join('');
+  
+  document.getElementById('listings').innerHTML = html;
+}
+
+load();
+</script>
+</body>
+</html>
