@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vet INC — Status Board</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 2rem; max-width: 1000px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .subtitle { color: #888; font-size: 0.85rem; margin-bottom: 2rem; }
+  .updated { color: #555; font-size: 0.75rem; margin-bottom: 2rem; }
+  
+  .goal { background: #111; border: 1px solid #333; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; text-align: center; }
+  .goal h2 { font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem; }
+  .goal .deadline { font-size: 0.9rem; color: #f59e0b; font-weight: 700; }
+  .goal .days-left { font-size: 2rem; font-weight: 800; color: #f59e0b; margin: 0.5rem 0; }
+  .goal .target { color: #888; font-size: 0.85rem; }
+  
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+  .card { background: #111; border: 1px solid #222; border-radius: 8px; padding: 1.25rem; }
+  .card h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 0.75rem; }
+  .card .big { font-size: 1.8rem; font-weight: 800; color: #fff; }
+  .card .label { font-size: 0.8rem; color: #666; margin-top: 0.25rem; }
+  
+  .section { background: #111; border: 1px solid #222; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+  .section h3 { font-size: 0.9rem; margin-bottom: 0.75rem; color: #fff; }
+  
+  .item { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid #1a1a1a; }
+  .item:last-child { border-bottom: none; }
+  .item .name { font-size: 0.85rem; }
+  .item .meta { font-size: 0.75rem; color: #666; }
+  
+  .tag { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+  .tag-live { background: #064e3b; color: #34d399; }
+  .tag-building { background: #713f12; color: #fbbf24; }
+  .tag-blocked { background: #7f1d1d; color: #f87171; }
+  .tag-done { background: #1e3a5f; color: #60a5fa; }
+  .tag-waiting { background: #3b0764; color: #c084fc; }
+  
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 0.5rem; }
+  .dot-green { background: #34d399; }
+  .dot-yellow { background: #fbbf24; }
+  .dot-red { background: #f87171; }
+  .dot-blue { background: #60a5fa; }
+  
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<h1>Vet INC Status Board</h1>
+<div class="subtitle">Jack & Scott — Updated June 7, 2026</div>
+
+<!-- GOAL -->
+<div class="goal">
+  <h2>MISSION: First Live Clinic</h2>
+  <div class="deadline">Deadline: July 1, 2026</div>
+  <div class="days-left" id="days-left">24 days</div>
+  <div class="target">Target: 1 clinic using our software with live data flowing</div>
+</div>
+
+<!-- NUMBERS -->
+<div class="grid">
+  <div class="card">
+    <h3>Clinics Emailed</h3>
+    <div class="big">44</div>
+    <div class="label">10/day running automatically</div>
+  </div>
+  <div class="card">
+    <h3>Replies</h3>
+    <div class="big">0</div>
+    <div class="label">Email deliverability being fixed</div>
+  </div>
+  <div class="card">
+    <h3>Cornerstone Clinics Found</h3>
+    <div class="big">23</div>
+    <div class="label">Confirmed users, ready to target</div>
+  </div>
+  <div class="card">
+    <h3>Clinics For Sale</h3>
+    <div class="big">6</div>
+    <div class="label">In transition, high-intent targets</div>
+  </div>
+</div>
+
+<!-- WHAT WE HAVE -->
+<div class="section">
+  <h3>What's Built & Ready</h3>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>vetinc.ca — live marketing site</span><span class="tag tag-done">LIVE</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>V1.6 Dashboard — full pricing tool</span><span class="tag tag-done">LIVE</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>Cornerstone Extractor — double-click script</span><span class="tag tag-done">READY</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>Pattern Engine — generates pricing recs</span><span class="tag tag-done">READY</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>Outreach Engine — sends 10 emails/day</span><span class="tag tag-live">RUNNING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>Reply Detector — classifies + alerts</span><span class="tag tag-live">RUNNING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>Follow-up Engine — auto follows up</span><span class="tag tag-live">RUNNING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-green"></span>Rosslyn Data — 622K services analyzed</span><span class="tag tag-done">DONE</span></div>
+</div>
+
+<!-- WHAT'S BLOCKED -->
+<div class="section">
+  <h3>What's Blocking Us</h3>
+  <div class="item"><span class="name"><span class="status-dot dot-red"></span>Email deliverability — going to spam</span><span class="tag tag-blocked">FIXING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-yellow"></span>No live clinic data — only Rosslyn (stale)</span><span class="tag tag-building">NEEDS CLINIC</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-yellow"></span>Case study not packaged yet</span><span class="tag tag-building">BUILDING</span></div>
+</div>
+
+<!-- PLAN OF ATTACK -->
+<div class="section">
+  <h3>Plan of Attack — Next 24 Days</h3>
+  <div class="item"><span class="name"><span class="status-dot dot-yellow"></span>Week 1: Fix email + build case study + ID 50 Cornerstone clinics</span><span class="tag tag-building">THIS WEEK</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Week 1: Pitch vet practice brokers (MBC, Simmons, Canada Vet Brokerage)</span><span class="tag tag-building">PLANNING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Week 2: Target clinics for sale + new owners + retiring owners</span><span class="tag tag-waiting">QUEUED</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Week 2-3: First clinic runs extractor → data flows in → we show them money</span><span class="tag tag-waiting">QUEUED</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>June 28: Clinic applies first price changes</span><span class="tag tag-waiting">GOAL</span></div>
+</div>
+
+<!-- COMPETITIVE ANGLES -->
+<div class="section">
+  <h3>Competitive Angles</h3>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Broker channel — recommend us to every buyer</span><span class="tag tag-waiting">RESEARCH</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Profit Solver customers — 3,200 clinics that already paid for pricing help</span><span class="tag tag-waiting">RESEARCH</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>IDEXX rep channel — reps visit every Cornerstone clinic</span><span class="tag tag-waiting">RESEARCH</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Revenue-share for clinic #1 — % of uplift, zero monthly fee</span><span class="tag tag-waiting">PLANNING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Geographic exclusivity — "first in your city" FOMO</span><span class="tag tag-waiting">PLANNING</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>Vet consultants (Debbie Boone) — funnel clinics through trusted advisors</span><span class="tag tag-waiting">PLANNING</span></div>
+</div>
+
+<!-- WARM LEADS -->
+<div class="section">
+  <h3>Warm Leads / Relationships</h3>
+  <div class="item"><span class="name"><span class="status-dot dot-yellow"></span>Debbie Boone — vet consultant, waiting on Cal.com setup</span><span class="tag tag-building">WARM</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-yellow"></span>Maria Pirita (Uncharted Vet) — Andy Roark connection</span><span class="tag tag-building">WARM</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-yellow"></span>CRMBridge.ai (Shekhar Rane) — AVImark API access, emails unread</span><span class="tag tag-building">NEEDS REPLY</span></div>
+  <div class="item"><span class="name"><span class="status-dot dot-blue"></span>IDEXX — emailed June 5, no reply</span><span class="tag tag-waiting">WAITING</span></div>
+</div>
+
+<div class="updated">To update: just edit this HTML file and push to GitHub. Simple as that.</div>
+
+</body>
+</html>
