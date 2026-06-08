@@ -1,5 +1,5 @@
 {
-  "last_scrape": "2026-06-08T16:03:01.347940",
+  "last_scrape": "2026-06-08T16:08:51.195797",
   "listings": {
     "mbc::vet-1720": {
       "broker": "MBC Brokerage",
@@ -12,7 +12,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1720",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347796"
+      "last_seen": "2026-06-08T16:08:51.195432"
     },
     "mbc::vet-n-man": {
       "broker": "MBC Brokerage",
@@ -25,7 +25,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-n-man",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347812"
+      "last_seen": "2026-06-08T16:08:51.195450"
     },
     "mbc::vet-1711": {
       "broker": "MBC Brokerage",
@@ -38,7 +38,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1711",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347825"
+      "last_seen": "2026-06-08T16:08:51.195457"
     },
     "mbc::vet-hg-bc": {
       "broker": "MBC Brokerage",
@@ -51,7 +51,7 @@
       "status": "&nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-hg-bc",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347831"
+      "last_seen": "2026-06-08T16:08:51.195462"
     },
     "mbc::vet-s-gca": {
       "broker": "MBC Brokerage",
@@ -64,7 +64,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-s-gca",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347836"
+      "last_seen": "2026-06-08T16:08:51.195466"
     },
     "mbc::vet-1528": {
       "broker": "MBC Brokerage",
@@ -77,7 +77,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1528",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347840"
+      "last_seen": "2026-06-08T16:08:51.195470"
     },
     "mbc::vet-sunshinecoast": {
       "broker": "MBC Brokerage",
@@ -90,7 +90,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-sunshinecoast",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347845"
+      "last_seen": "2026-06-08T16:08:51.195475"
     },
     "mbc::vet-1453-gcwb2-786zb": {
       "broker": "MBC Brokerage",
@@ -103,7 +103,7 @@
       "status": "",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1453-gcwb2-786zb",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347850"
+      "last_seen": "2026-06-08T16:08:51.195479"
     },
     "mbc::vet-1444": {
       "broker": "MBC Brokerage",
@@ -116,7 +116,7 @@
       "status": "&nbsp; &nbsp; &nbsp;",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1444",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347854"
+      "last_seen": "2026-06-08T16:08:51.195483"
     },
     "mbc::vet-1462": {
       "broker": "MBC Brokerage",
@@ -129,7 +129,7 @@
       "status": "",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1462",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347858"
+      "last_seen": "2026-06-08T16:08:51.195487"
     },
     "mbc::vet-leduarea": {
       "broker": "MBC Brokerage",
@@ -142,7 +142,7 @@
       "status": "",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-leduarea",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347863"
+      "last_seen": "2026-06-08T16:08:51.195491"
     },
     "mbc::vet-gcavet": {
       "broker": "MBC Brokerage",
@@ -155,7 +155,7 @@
       "status": "",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-gcavet",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347867"
+      "last_seen": "2026-06-08T16:08:51.195496"
     },
     "mbc::vet-1347": {
       "broker": "MBC Brokerage",
@@ -168,7 +168,7 @@
       "status": "",
       "url": "https://www.mbcbrokerage.ca/all-listings/vet-1347",
       "source": "mbc",
-      "last_seen": "2026-06-08T16:03:01.347871"
+      "last_seen": "2026-06-08T16:08:51.195500"
     },
     "simmons::https://simmonsinc.com/buying-a-veterinary-practice/": {
       "broker": "Simmons",
@@ -181,7 +181,7 @@
       "status": "Available",
       "url": "https://simmonsinc.com/buying-a-veterinary-practice/",
       "source": "simmons",
-      "last_seen": "2026-06-08T16:03:01.347901"
+      "last_seen": "2026-06-08T16:08:51.195529"
     },
     "simmons::https://simmonsinc.com/how-we-value-your-veterinary-practice/": {
       "broker": "Simmons",
@@ -194,7 +194,241 @@
       "status": "Available",
       "url": "https://simmonsinc.com/how-we-value-your-veterinary-practice/",
       "source": "simmons",
-      "last_seen": "2026-06-08T16:03:01.347905"
+      "last_seen": "2026-06-08T16:08:51.195533"
+    },
+    "vhma::window.addEventListener('DOMContentLoaded', function (){\r\n  ": {
+      "broker": "VHMA",
+      "ref": "window.addEventListener('DOMContentLoaded', function (){\r\n  ",
+      "name": "window.addEventListener('DOMContentLoaded', function (){\r\n                        window.renderReactRoot(\r\n                            [], \r\n                            'page-react-root', \r\n                            {\"tenant\":{\"name\":\"Veterinary Hospital Managers Association\",\"logoPath\":\"https://higherlogicdownload.s3.amazonaws.com/VHMA/LogoImages/1c7cfa6b-dbe8-48d9-9ad1-e2385c5772e3_VHMA_logo_name_tagline_color_sm.png\",\"contactSummary\":\"",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://www.vhma.org/page/PracticeSales",
+      "source": "vhma",
+      "last_seen": "2026-06-08T16:08:51.195537"
+    },
+    "vma_ivma::IVMA::2026 Mountain West Veterinary Conference": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::2026 Mountain West Veterinary Conference",
+      "name": "2026 Mountain West Veterinary Conference",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://ivma.org/mwvc/",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195639"
+    },
+    "vma_ivma::IVMA::Veterinary Jobs": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::Veterinary Jobs",
+      "name": "Veterinary Jobs",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://ivma.org/classified-ads/veterinary-jobs/",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195644"
+    },
+    "vma_ivma::IVMA::Practice for Sale": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::Practice for Sale",
+      "name": "Practice for Sale",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://ivma.org/classified-ads/practice-for-sale/",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195648"
+    },
+    "vma_ivma::IVMA::Equipment for Sale": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::Equipment for Sale",
+      "name": "Equipment for Sale",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://ivma.org/classified-ads/equipment-for-sale/",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195652"
+    },
+    "vma_ivma::IVMA::Relief Veterinarians": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::Relief Veterinarians",
+      "name": "Relief Veterinarians",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://ivma.org/classified-ads/relief-veterinarians/",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195655"
+    },
+    "vma_ivma::IVMA::https://omnipg-vet.com/listing/idv310/": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::https://omnipg-vet.com/listing/idv310/",
+      "name": "https://omnipg-vet.com/listing/idv310/",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://omnipg-vet.com/listing/idv310/ ",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195592"
+    },
+    "vma_ivma::IVMA::https://omnipg-vet.com/listing/idv312/": {
+      "broker": "IVMA Classifieds",
+      "ref": "IVMA::https://omnipg-vet.com/listing/idv312/",
+      "name": "https://omnipg-vet.com/listing/idv312/",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://omnipg-vet.com/listing/idv312/",
+      "source": "vma_ivma",
+      "last_seen": "2026-06-08T16:08:51.195596"
+    },
+    "vma_tvma::TVMA::Tennessee Veterinarian Magazine": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::Tennessee Veterinarian Magazine",
+      "name": "Tennessee Veterinarian Magazine",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvma.wildapricot.org/Tennessee-Veterinarian-Magazine",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195740"
+    },
+    "vma_tvma::TVMA::Practices &amp; Equipment for Sale": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::Practices &amp; Equipment for Sale",
+      "name": "Practices &amp; Equipment for Sale",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195744"
+    },
+    "vma_tvma::TVMA::Relief Veterinarians": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::Relief Veterinarians",
+      "name": "Relief Veterinarians",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/relief-veterinarians/",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195748"
+    },
+    "vma_tvma::TVMA::drwagvet@gmail.com": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::drwagvet@gmail.com",
+      "name": "drwagvet@gmail.com",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/mailto:drwagvet@gmail.com",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195683"
+    },
+    "vma_tvma::TVMA::ahomvet@gmail.com": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::ahomvet@gmail.com",
+      "name": "ahomvet@gmail.com",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/mailto:ahomvet@gmail.com",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195687"
+    },
+    "vma_tvma::TVMA::willvet50@aol.com": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::willvet50@aol.com",
+      "name": "willvet50@aol.com",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/mailto:willvet50@aol.com",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195691"
+    },
+    "vma_tvma::TVMA::Hello@psavet.com": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::Hello@psavet.com",
+      "name": "Hello@psavet.com",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/mailto:Hello@psavet.com",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195695"
+    },
+    "vma_tvma::TVMA::bradleyvet@aol.com": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::bradleyvet@aol.com",
+      "name": "bradleyvet@aol.com",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/mailto:bradleyvet@aol.com",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195699"
+    },
+    "vma_tvma::TVMA::tennvet1@gmail.com": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::tennvet1@gmail.com",
+      "name": "tennvet1@gmail.com",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvmanet.com/practices-amp-equipment-for-sale/mailto:tennvet1@gmail.com",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195702"
+    },
+    "vma_tvma::TVMA::Find a Veterinarian": {
+      "broker": "TVMA Classifieds",
+      "ref": "TVMA::Find a Veterinarian",
+      "name": "Find a Veterinarian",
+      "available": "",
+      "province": "",
+      "revenue": 0,
+      "ebitda": 0,
+      "status": "Available",
+      "url": "https://tvma.wildapricot.org/findavet/",
+      "source": "vma_tvma",
+      "last_seen": "2026-06-08T16:08:51.195736"
     }
   }
 }
